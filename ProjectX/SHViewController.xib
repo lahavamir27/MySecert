@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHViewController">
+            <connections>
+                <outlet property="collectionView" destination="Szh-NV-86B" id="oG9-bX-SyQ"/>
+                <outlet property="doneBtn" destination="vn9-DE-0OK" id="faM-a7-pYc"/>
+                <outlet property="imageView" destination="dv8-Gc-a6m" id="WOS-dC-IRh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vn9-DE-0OK">
+                    <rect key="frame" x="322" y="632" width="41" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="1" green="0.82002019557823125" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtontapped" destination="-1" eventType="touchUpInside" id="lG3-GD-OCc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-if-OPm">
+                    <rect key="frame" x="12" y="627" width="53" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButtonTapped" destination="-1" eventType="touchUpInside" id="1kU-4a-cxq"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Szh-NV-86B">
+                    <rect key="frame" x="0.0" y="526" width="375" height="88"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="s9Z-JS-x14"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="3" minimumInteritemSpacing="3" id="A67-EE-rnS">
+                        <size key="itemSize" width="62" height="84"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uBa-Gh-bYS"/>
+                        <outlet property="delegate" destination="-1" id="RKe-oF-ANw"/>
+                    </connections>
+                </collectionView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dv8-Gc-a6m">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="526"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="dy9-d7-vdq"/>
+                        <constraint firstAttribute="height" constant="526" id="owY-Jf-PYD"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0B-2L-xC1">
+                    <rect key="frame" x="322" y="12" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.59999999999999998" height="0.59999999999999998"/>
+                    <inset key="imageEdgeInsets" minX="9" minY="10" maxX="9" maxY="8"/>
+                    <state key="normal" image="icons8-pencil-72"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSr-Ts-Oxg">
+                    <rect key="frame" x="270" y="12" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="6" minY="7" maxX="6" maxY="5"/>
+                    <size key="titleShadowOffset" width="-1" height="1"/>
+                    <state key="normal" image="Aa">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addTextView:" destination="-1" eventType="touchUpInside" id="k65-Ui-YeJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vB-fE-fEw">
+                    <rect key="frame" x="218" y="12" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="7" minY="7" maxX="7" maxY="7"/>
+                    <state key="normal" image="icons8-happy-72-2 copy"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vn9-DE-0OK" firstAttribute="top" secondItem="Szh-NV-86B" secondAttribute="bottom" constant="18" id="68h-ID-spj"/>
+                <constraint firstAttribute="trailing" secondItem="Szh-NV-86B" secondAttribute="trailing" id="6dB-HL-1O0"/>
+                <constraint firstItem="Szh-NV-86B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="97s-Bm-4vc"/>
+                <constraint firstAttribute="bottom" secondItem="Szh-NV-86B" secondAttribute="bottom" constant="53" id="DYQ-l7-uz4"/>
+                <constraint firstAttribute="bottom" secondItem="vn9-DE-0OK" secondAttribute="bottom" constant="9" id="EMT-jQ-cqW"/>
+                <constraint firstItem="dv8-Gc-a6m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EzS-2K-Xt2"/>
+                <constraint firstItem="Szh-NV-86B" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dv8-Gc-a6m" secondAttribute="bottom" constant="-2" id="FQ4-HS-XGV"/>
+                <constraint firstItem="Ea0-if-OPm" firstAttribute="top" secondItem="Szh-NV-86B" secondAttribute="bottom" constant="13" id="QmT-Ju-pvL"/>
+                <constraint firstAttribute="trailing" secondItem="vn9-DE-0OK" secondAttribute="trailing" constant="12" id="Ymf-kE-oy8"/>
+                <constraint firstItem="dv8-Gc-a6m" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aPm-TD-6wN"/>
+                <constraint firstItem="dv8-Gc-a6m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ar5-TH-Sd1"/>
+                <constraint firstAttribute="bottom" secondItem="Ea0-if-OPm" secondAttribute="bottom" constant="4" id="tu3-QI-r4P"/>
+                <constraint firstItem="Ea0-if-OPm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="tyL-7v-sOD"/>
+                <constraint firstAttribute="bottom" secondItem="Ea0-if-OPm" secondAttribute="bottom" constant="4" id="u80-ib-Imh"/>
+                <constraint firstAttribute="trailing" secondItem="dv8-Gc-a6m" secondAttribute="trailing" id="w8l-TD-igC"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Aa" width="36" height="36"/>
+        <image name="icons8-happy-72-2 copy" width="36" height="36"/>
+        <image name="icons8-pencil-72" width="36" height="36"/>
+    </resources>
+</document>

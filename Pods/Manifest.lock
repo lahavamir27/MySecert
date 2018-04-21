@@ -1,0 +1,40 @@
+PODS:
+  - Cache (3.3.0):
+    - SwiftHash (~> 1.4.0)
+  - Cartography (2.0.0)
+  - Eureka (4.0.1)
+  - KeychainSwift (10.0.0)
+  - Realm (3.0.0-beta.3):
+    - Realm/Headers (= 3.0.0-beta.3)
+  - Realm/Headers (3.0.0-beta.3)
+  - RealmSwift (3.0.0-beta.3):
+    - Realm (= 3.0.0-beta.3)
+  - RNCryptor (5.0.1)
+  - SwiftHash (1.4.0)
+  - YangMingShan (1.3.0):
+    - YangMingShan/YMSPhotoPicker (= 1.3.0)
+  - YangMingShan/YMSPhotoPicker (1.3.0)
+
+DEPENDENCIES:
+  - Cache
+  - Cartography (~> 2.0)
+  - Eureka
+  - KeychainSwift (~> 10.0)
+  - RealmSwift (= 3.0.0-beta.3)
+  - RNCryptor (~> 5.0)
+  - YangMingShan
+
+SPEC CHECKSUMS:
+  Cache: 871805a8a7268feac34f5c10c54506801f0bd4cd
+  Cartography: d295eb25ab54bb57eecd8c2f04e9648c850f1281
+  Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  KeychainSwift: f9f7910449a0c0fd2cabc889121530dd2c477c33
+  Realm: 33bd2ac5a5d7649920b131d2e79e2d5c8421da47
+  RealmSwift: a5fb1853c3167912fc5325fe264a410bfe3e2cbc
+  RNCryptor: 2e352a488779d1a9184ab629be22a7c5bc84acb5
+  SwiftHash: acf0f29032309a5c7a7f625595eade1aca97aca2
+  YangMingShan: e8a558a783663360ef63f07ae6d1940a5a5ead69
+
+PODFILE CHECKSUM: fe66d6bc0ed15104e2d40f863318d248ea6fa9e2
+
+COCOAPODS: 1.3.1

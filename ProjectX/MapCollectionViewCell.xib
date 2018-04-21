@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MapCollectionViewCell" customModule="ProjectX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="228"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="228"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Places" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukH-db-ae1">
+                        <rect key="frame" x="8" y="139" width="128" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="p3O-X6-Hhy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="79" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gR-k7-9WT">
+                        <rect key="frame" x="10" y="158" width="126" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7ev-jj-Cl7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0W-tq-keR">
+                        <rect key="frame" x="10" y="10" width="126" height="126"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Z0W-tq-keR" secondAttribute="height" multiplier="1:1" id="HNZ-jf-Lka"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e8C-kP-PA8">
+                        <rect key="frame" x="49" y="47" width="48" height="48"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="e8C-kP-PA8" secondAttribute="height" multiplier="1:1" id="sJK-KR-XhM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3gR-k7-9WT" firstAttribute="top" secondItem="ukH-db-ae1" secondAttribute="bottom" constant="-3" id="0Q9-HT-ibr"/>
+                <constraint firstItem="ukH-db-ae1" firstAttribute="top" secondItem="Z0W-tq-keR" secondAttribute="bottom" constant="3" id="1Hb-NU-abG"/>
+                <constraint firstAttribute="trailing" secondItem="Z0W-tq-keR" secondAttribute="trailing" id="40g-vR-5v6"/>
+                <constraint firstItem="ukH-db-ae1" firstAttribute="top" secondItem="e8C-kP-PA8" secondAttribute="bottom" constant="44" id="G4i-9b-slb"/>
+                <constraint firstItem="Z0W-tq-keR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="L8v-Fn-UVk"/>
+                <constraint firstItem="e8C-kP-PA8" firstAttribute="centerY" secondItem="Z0W-tq-keR" secondAttribute="centerY" constant="-2" id="Mg9-np-lGT"/>
+                <constraint firstItem="ukH-db-ae1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="SYk-zd-bLg"/>
+                <constraint firstItem="3gR-k7-9WT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Y0H-os-u5p"/>
+                <constraint firstAttribute="trailing" secondItem="ukH-db-ae1" secondAttribute="trailing" id="b7h-Rb-zJH"/>
+                <constraint firstItem="Z0W-tq-keR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="kfg-SA-VYS"/>
+                <constraint firstAttribute="trailing" secondItem="3gR-k7-9WT" secondAttribute="trailing" id="qcf-XI-xRr"/>
+                <constraint firstItem="e8C-kP-PA8" firstAttribute="centerX" secondItem="Z0W-tq-keR" secondAttribute="centerX" id="unt-Up-30P"/>
+            </constraints>
+            <size key="customSize" width="141" height="228"/>
+            <connections>
+                <outlet property="albumName" destination="ukH-db-ae1" id="PLh-sw-pTG"/>
+                <outlet property="image" destination="Z0W-tq-keR" id="vqk-1y-Ze3"/>
+                <outlet property="numberOfPhotos" destination="3gR-k7-9WT" id="tO0-43-G6g"/>
+                <outlet property="photoImage" destination="e8C-kP-PA8" id="qJx-f7-omq"/>
+            </connections>
+            <point key="canvasLocation" x="70" y="141"/>
+        </collectionViewCell>
+    </objects>
+</document>
